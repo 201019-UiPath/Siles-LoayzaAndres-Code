@@ -28,6 +28,8 @@ namespace HeroesUI
             */
             #endregion
 
+            #region accessing arrays
+            /*
             obj.ja[0] = new int[2];
             obj.ja[1] = new int[3];
             obj.ja[2] = new int[1];
@@ -48,6 +50,28 @@ namespace HeroesUI
                 }
                 Console.Write("\n");
             }
+            */
+            #endregion
+
+            #region List<T>
+            /*
+            Console.Write("Remove super power: ");
+            string sp=Console.ReadLine();
+            //Hero.superPowers.Remove(sp);
+            
+            Console.Write("\n");
+            foreach(var superPower in Hero.GetSuperPowers())
+            {
+                Console.WriteLine(superPower);
+            }*/
+            #endregion
+
+            #region Dictionary<key, value>
+            Console.WriteLine("Superhero       Hideout");
+            foreach(var superhero in Hero.hideOuts) {
+                Console.WriteLine($"{superhero.Key}       {Hero.hideOuts[superhero.Key]}");
+            }
+            #endregion 
         }
     }
 }
