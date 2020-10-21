@@ -48,23 +48,24 @@ namespace HeroesLib
         #endregion
 
         //public static List<string> superPowers = new List<string>();
-        public static Stack<string> superPowers = new Stack<string>(); //LIFO
-        public static Dictionary<string, string> hideOuts = new Dictionary<string, string>();
+        public Stack<string> superPowers = new Stack<string>(); //LIFO
+        public Dictionary<string, string> hideOuts = new Dictionary<string, string>();
 
         public Hero()
         {
+            /*
             superPowers.Push("Strength");
             superPowers.Push("Fly");
             superPowers.Push("Invisibility");
             superPowers.Push("X-Ray Vision");
             hideOuts.Add("Thor", "Asgard");
             hideOuts.Add("Batman", "Batcave");
-            hideOuts.Add("Superman", "Fortress of Solitude");
+            hideOuts.Add("Superman", "Fortress of Solitude");*/
         }
 
         //method
         //NOTE: methods in C# are always PascalCase by convention
-        public static Stack<string> GetSuperPowers() {
+        public Stack<string> GetSuperPowers() {
             return superPowers;
         }
 
