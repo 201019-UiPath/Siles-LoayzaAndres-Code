@@ -1,11 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
+    <ProjectReference Include="..\HeroesDB\HeroesDB.csproj" />
     <ProjectReference Include="..\HeroesLib\HeroesLib.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="4.7.2" />
   </ItemGroup>
 
   <PropertyGroup>

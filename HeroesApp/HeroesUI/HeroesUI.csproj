@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HeroesLib\HeroesLib.csproj" />
+    <ProjectReference Include="..\HeroesBL\HeroesBL.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

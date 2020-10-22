@@ -1,0 +1,2 @@
+{"Id":0,"Name":"Spider-Man"}
+"HeroesLib.Hero , "

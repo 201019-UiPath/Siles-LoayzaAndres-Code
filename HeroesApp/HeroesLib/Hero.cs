@@ -73,6 +73,9 @@ namespace HeroesLib
             if(superPower != null && superPower != "") {
                 superPowers.Push(superPower);
             }
+            else {
+                throw new ArgumentException("superpower should not be null");
+            }
         }
 
         public void RemoveSuperPower(/*string superPower*/) {

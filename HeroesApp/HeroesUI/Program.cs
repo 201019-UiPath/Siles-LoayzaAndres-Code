@@ -75,8 +75,29 @@ namespace HeroesUI
             #endregion 
 
             #region calling Hero menu
+            /*
             MainMenu startMenu = new MainMenu();
-            startMenu.Start();
+            startMenu.Start();*/
+            #endregion
+
+            #region delegates, anonymous members, lambda
+            HeroTasks heroTasks = new HeroTasks();
+            HeroDel del = new HeroDel(heroTasks.GetPowers);
+            del += heroTasks.DoWork; //+= subscribe to a method
+            //del -= heroTasks.DoWork; //-= unsubscribes to a method
+            del += heroTasks.ManageLife;
+            del();
+            //Func<string, string> fd;
+            //Predicate<string> predicate;
+
+            //Anonymous methods
+            Action<string> am = delegate(string name) {
+                System.Console.WriteLine("Hello anonymous");
+            };
+            am("foo");
+            //Lambda expression --> shorthand for anonymous method
+            Action<string> lm = (string name) => Console.WriteLine("Hello lambda");
+            lm("foo");
             #endregion
 
         }

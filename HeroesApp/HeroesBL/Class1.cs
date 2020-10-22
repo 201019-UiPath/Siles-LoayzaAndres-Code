@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace HeroesDB
+namespace HeroesBL
 {
     public class Class1
     {
