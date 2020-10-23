@@ -80,8 +80,9 @@ namespace HeroesUI
             startMenu.Start();*/
             #endregion
 
-            #region delegates, anonymous members, lambda
             HeroTasks heroTasks = new HeroTasks();
+            #region delegates, anonymous members, lambda
+            /*
             HeroDel del = new HeroDel(heroTasks.GetPowers);
             del += heroTasks.DoWork; //+= subscribe to a method
             //del -= heroTasks.DoWork; //-= unsubscribes to a method
@@ -97,9 +98,14 @@ namespace HeroesUI
             am("foo");
             //Lambda expression --> shorthand for anonymous method
             Action<string> lm = (string name) => Console.WriteLine("Hello lambda");
-            lm("foo");
+            lm("foo");*/
             #endregion
 
+            #region asynchronous vs. synchronous programming
+            heroTasks.DoWork(); //this will create a second thread and process it in the background
+            heroTasks.ManageLife(); //this will be processed by the main thread
+            Console.Read(); //this is to make the console wait while the second thread processes
+            #endregion
         }
     }
 }
