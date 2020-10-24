@@ -7,6 +7,7 @@ namespace HeroesLib
     public class HeroTasks : Hero, IHeroOperations, IHeroSuperPowers
     {
         string filepath = @"C:\Users\Cito\Revature\Training\Siles-LoayzaAndres-Code\HeroesApp\SuperPowers.txt";
+        public event HeroDel workDone; 
 
         public async void DoWork() //"async" allows this method to execute asynchronously
         {
@@ -14,6 +15,14 @@ namespace HeroesLib
             await Task.Run(new System.Action(GetPowers)); //runs this method on a new thread
             System.Console.WriteLine("Saving humanity is my work");
             System.Console.WriteLine("Work finished");
+            OnWorkDone();
+        }
+
+        public void OnWorkDone()
+        {
+            workDone?.Invoke(); //if workDone != null, then invoke workDone()
+                                //this functionality is unique to events
+                                //each subscriber will be called independently of each other
         }
 
         public void GetPowers()

@@ -102,6 +102,10 @@ namespace HeroesUI
             #endregion
 
             #region asynchronous vs. synchronous programming
+            //Subscribing to publisher
+            heroTasks.workDone += EmailService.SendEmail;
+            heroTasks.workDone += TextMessageService.SendText;
+            heroTasks.workDone += PushNotification.SendPushNotification;
             heroTasks.DoWork(); //this will create a second thread and process it in the background
             heroTasks.ManageLife(); //this will be processed by the main thread
             Console.Read(); //this is to make the console wait while the second thread processes
