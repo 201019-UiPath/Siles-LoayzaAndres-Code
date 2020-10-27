@@ -360,4 +360,7 @@ MigrationBackup/
 # File that contains sensitive database access info
 appsettings.json
 
+# Exclude migrations in HerosApp-Demo
+HerosApp-Demo/HerosDB/Migrations/
+
 # End of https://www.toptal.com/developers/gitignore/api/csharp
