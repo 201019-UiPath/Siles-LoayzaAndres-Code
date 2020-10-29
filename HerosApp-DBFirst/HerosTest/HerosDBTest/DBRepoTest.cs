@@ -10,14 +10,9 @@ namespace HerosTest.HerosDBTest
 {
     public class DBRepoTest
     {
-<<<<<<< HEAD
         private readonly IMapper mapper = new DBMapper();
         private DBRepo repo;
         //Test data
-=======
-        private readonly DBMapper mapper = new DBMapper();
-        private DBRepo repo;
->>>>>>> d53fbc2392e1a1b2a4e71eb3710a8c6107c1011c
         private readonly SuperHero testHero = new SuperHero()
         {
             RealName = "Diana",
@@ -37,10 +32,6 @@ namespace HerosTest.HerosDBTest
                 }
             }
         };
-<<<<<<< HEAD
-=======
-
->>>>>>> d53fbc2392e1a1b2a4e71eb3710a8c6107c1011c
         private readonly List<Superpeople> testPeople = new List<Superpeople>()
         {
             new Superpeople()
@@ -59,11 +50,7 @@ namespace HerosTest.HerosDBTest
                     new Powers()
                     {
                         Name = "Super Builder",
-<<<<<<< HEAD
                         Description = "If you dream it he can build it"
-=======
-                        Description = "If you dream it, he can build it"
->>>>>>> d53fbc2392e1a1b2a4e71eb3710a8c6107c1011c
                     }
                 }
             },
@@ -71,7 +58,6 @@ namespace HerosTest.HerosDBTest
             {
                 Realname = "Barnabus Saurus III",
                 Workname = "Barney",
-<<<<<<< HEAD
                 Hideout = "This house",
                 Chartype = 2
             }
@@ -84,16 +70,6 @@ namespace HerosTest.HerosDBTest
         private void Seed(HeroContext testcontext)
         {
             testcontext.Charactertype.AddRange(charactertypes);
-=======
-                Hideout = "Barney's house",
-                Chartype = 2
-            }
-        };
-
-        private void Seed(HeroContext testcontext)
-        {
-            testcontext.Charactertype.AddRange();
->>>>>>> d53fbc2392e1a1b2a4e71eb3710a8c6107c1011c
             testcontext.Superpeople.AddRange(testPeople);
             testcontext.SaveChanges();
         }
@@ -110,7 +86,6 @@ namespace HerosTest.HerosDBTest
             repo.AddAHeroAsync(testHero);
 
             //Assert
-<<<<<<< HEAD
             using var assertContext = new HeroContext(options);
             Assert.NotNull(assertContext.Superpeople.Single(h => h.Workname == testHero.Alias));
 
@@ -150,11 +125,6 @@ namespace HerosTest.HerosDBTest
             //Assert
             Assert.NotNull(result);
             Assert.Equal("Bob", result.RealName);
-=======
-            using var assertContext = new HeroContext();
-            Assert.NotNull(assertContext.Superpeople.Single(h => h.Workname == testHero.Alias));
-            //Assert.NotNull(assertContext.Superpeople.
->>>>>>> d53fbc2392e1a1b2a4e71eb3710a8c6107c1011c
         }
     }
 }
