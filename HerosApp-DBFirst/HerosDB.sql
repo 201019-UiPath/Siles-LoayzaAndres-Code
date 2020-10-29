@@ -1,7 +1,7 @@
--- drop table enemies;
--- drop table powers;
--- drop table superpeople;
--- drop table charactertype;
+--drop table enemies;
+--drop table powers;
+--drop table superpeople;
+--drop table charactertype;
 
 -- creating the type of super person --
 create table charactertype

@@ -1,6 +1,6 @@
 using System;
 using HerosDB;
-using HerosLib;
+using HerosDB.Entities;
 namespace HeroUI
 {
     public class MainMenu : IMenu
@@ -8,10 +8,10 @@ namespace HeroUI
         private string userInput;
         private HeroMenu heroMenu;        
         private VillainMenu villainMenu;
-        public MainMenu()
+        public MainMenu(HeroContext context, IMapper mapper)
         {
-            this.heroMenu = new HeroMenu(new FileRepo(), new MessagingService());
-            this.villainMenu = new VillainMenu(new FileRepo(), new MessagingService());
+            this.heroMenu = new HeroMenu(new DBRepo(context, mapper), new MessagingService());
+            this.villainMenu = new VillainMenu(new DBRepo(context, mapper), new MessagingService());
         }
         public void start()
         {
