@@ -1,0 +1,25 @@
+﻿@model ICollection<HerosDB.Models.SuperHero>
+ 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Super Heroes List</h2>
+<ul>
+@{
+    foreach(var superHero in Model)
+    {
+        <ul>
+            <li>@superHero.Id @superHero.Alias </li>
+            <ol>
+                @foreach(var power in superHero.SuperPowers)
+                {
+                    <li>@power.Name - @power.Description</li>
+                }
+            </ol>
+        </ul>
+    }
+}
+</ul>
+
+@Html.Partial("_DateTimePartial")

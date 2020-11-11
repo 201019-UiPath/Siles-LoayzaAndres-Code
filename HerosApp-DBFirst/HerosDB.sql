@@ -59,3 +59,7 @@ insert into powers (name, description, ownerid) values
 ('Spider abilities', 'Spider man can do anything a spider can', 1),
 ('Snap', 'Using the infinity stone glove, in a snap he does population control', 3),
 ('Mechanical tentacles', 'Mechanical tentacles that shield and attack for him', 4);
+
+
+
+select * from superpeople

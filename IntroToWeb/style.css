@@ -1,0 +1,39 @@
+article{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.section {
+    margin-top: 30px;
+}
+
+body {
+    background-color: lightseagreen;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+    font-variant-caps: all-small-caps;
+    background-color: lightslategray;
+}
+
+div h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+
+h2 + article {
+    margin-left: 75px;
+}
+
+div ul {
+    margin-left: 75px;
+    margin-top: 10px;
+}
+
+ul li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: cornsilk;
+}

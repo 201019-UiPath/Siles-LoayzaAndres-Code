@@ -1,0 +1,21 @@
+﻿@*model SuperHero*@
+@{
+    ViewData["Title"] = "Home Page";
+    //var hero = ViewData["SuperHeroName"] as SuperHero;
+    //var hero = ViewBag.SuperHeroName;
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Heroes App</h1>
+    <p>Superhero id: @ViewBag.id</p>
+    <p>Superhero name: @ViewBag.name</p>
+</div>
+
+@*
+@section extraitems{
+    <p>@Model.Id - @Model.name</p>
+}*@
+
+@*look for the _DateTimePartial view in the shared folder and render it*@
+@Html.Partial("_DateTimePartial")
