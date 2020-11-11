@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HerosDB.Entities
 {
@@ -9,7 +10,7 @@ namespace HerosDB.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         public int? Ownerid { get; set; }
-
+        
         public virtual Superpeople Owner { get; set; }
     }
 }

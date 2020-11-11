@@ -24,19 +24,20 @@ namespace HerosDB.Entities
         public virtual DbSet<Powers> Powers { get; set; }
         public virtual DbSet<Superpeople> Superpeople { get; set; }
 
+        /*
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
                 var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile(@"C:\Users\Cito\Revature\Training\Siles-LoayzaAndres-Code\HerosApp-DBFirst\appsettings.json")
+                .AddJsonFile("appsettings.json")
                 .Build();
                 
                 var connectionString = configuration.GetConnectionString("HerosDB");
                 optionsBuilder.UseNpgsql(connectionString);
             }
-        }
+        }*/
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

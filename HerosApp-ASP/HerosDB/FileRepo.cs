@@ -47,5 +47,10 @@ namespace HerosDB
         {
             throw new System.NotImplementedException();
         }
+
+        public void UpdateHero(SuperHero superHero)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

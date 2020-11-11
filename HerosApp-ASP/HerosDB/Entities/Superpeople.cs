@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace HerosDB.Entities
 {
@@ -12,7 +14,7 @@ namespace HerosDB.Entities
             Powers = new HashSet<Powers>();
         }
 
-        public int Id { get; set; }
+        public int Id { get; set; } 
         public string Realname { get; set; }
         public string Workname { get; set; }
         public string Hideout { get; set; }

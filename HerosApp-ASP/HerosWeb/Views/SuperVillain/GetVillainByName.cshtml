@@ -1,0 +1,49 @@
+﻿@model HerosDB.Models.SuperVillain
+
+@{
+    ViewData["Title"] = "GetVillainByName";
+}
+
+<h1>GetVillainByName</h1>
+
+<div>
+    <h4>SuperVillain</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.RealName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.RealName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Alias)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Alias)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.HideOut)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.HideOut)
+        </dd>
+    </dl>
+    <h4>Super Powers</h4>
+    <ol>
+        @foreach (var power in Model.SuperPowers)
+        {
+            <li>@power.Name - @power.Description</li>
+        }
+    </ol>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
