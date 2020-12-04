@@ -1,11 +1,10 @@
 {
-  "name": "GetTimeInBucharest",
-  "description": "This workflow gets the current time in Bucharest.\r\n",
+  "name": "REFrameworkPractice1",
+  "description": "Demo for Practice 1 in the Robotic Enterprise Framework Deep Dive on UiPath Academy",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Credentials.Activities": "[1.1.6479.13204]",
     "UiPath.Excel.Activities": "[2.7.2]",
-    "UiPath.GSuite.Activities": "[1.5.1]",
-    "UiPath.Mail.Activities": "[1.7.2]",
     "UiPath.System.Activities": "[19.10.1]",
     "UiPath.UIAutomation.Activities": "[19.11.3]"
   },
@@ -34,7 +33,14 @@
     "fileInfos": []
   },
   "arguments": {
-    "input": [],
+    "input": [
+      {
+        "name": "in_OrchestratorQueueName",
+        "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": false
+      }
+    ],
     "output": []
   },
   "expressionLanguage": "VisualBasic"

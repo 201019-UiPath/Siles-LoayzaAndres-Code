@@ -22,34 +22,6 @@
     },
     {
       "Package": {
-        "Id": "UiPath.GSuite.Activities",
-        "Version": "1.5.1"
-      },
-      "Assemblies": [
-        "C:\\Users\\Cito\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis/1.44.0\\lib/net45/Google.Apis.PlatformServices.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis/1.44.0\\lib/net45/Google.Apis.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis.auth/1.44.0\\lib/net45/Google.Apis.Auth.PlatformServices.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis.auth/1.44.0\\lib/net45/Google.Apis.Auth.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis.calendar.v3/1.44.0.1872\\lib/net45/Google.Apis.Calendar.v3.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis.core/1.44.0\\lib/net45/Google.Apis.Core.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis.docs.v1/1.44.0.1877\\lib/net45/Google.Apis.Docs.v1.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis.drive.v3/1.44.0.1863\\lib/net45/Google.Apis.Drive.v3.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis.gmail.v1/1.44.0.1859\\lib/net45/Google.Apis.Gmail.v1.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis.script.v1/1.44.0.1882\\lib/net45/Google.Apis.Script.v1.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\google.apis.sheets.v4/1.44.0.1877\\lib/net45/Google.Apis.Sheets.v4.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\microsoft.applicationinsights/2.3.0\\lib/net46/Microsoft.ApplicationInsights.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\mimekit/2.5.1\\lib/net46/MimeKit.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\nodatime/2.4.7\\lib/net45/NodaTime.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\uipath.gsuite.activities/1.5.1\\lib/net461/UiPath.GSuite.Activities.Design.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\uipath.gsuite.activities/1.5.1\\lib/net461/UiPath.GSuite.Activities.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\uipath.gsuite.activities/1.5.1\\lib/net461/UiPath.GSuite.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\uipath.gsuite.activities/1.5.1\\lib/net461/UiPath.Orchestrator.dll"
-      ]
-    },
-    {
-      "Package": {
         "Id": "UiPath.Mail.Activities",
         "Version": "1.7.2"
       },
@@ -75,7 +47,7 @@
         "C:\\Users\\Cito\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\Cito\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
@@ -104,7 +76,7 @@
         "C:\\Users\\Cito\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
-        "C:\\Users\\Cito\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\Cito\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\uipath/19.10.7452.28108\\lib/UiPath.Interop.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\uipath.ocr.contracts/2.2.1\\lib/net45/UiPath.OCR.Contracts.dll",
         "C:\\Users\\Cito\\.nuget\\packages\\uipath.uiautomation.activities/19.11.3\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
@@ -171,124 +143,6 @@
       "Version": "2.8.0",
       "Dependencies": []
     },
-    "Google.Apis": {
-      "Id": "Google.Apis",
-      "Version": "1.44.0",
-      "Dependencies": [
-        {
-          "Item1": "Google.Apis.Core",
-          "Item2": "[1.44.0, )"
-        }
-      ]
-    },
-    "Google.Apis.Auth": {
-      "Id": "Google.Apis.Auth",
-      "Version": "1.44.0",
-      "Dependencies": [
-        {
-          "Item1": "Google.Apis.Core",
-          "Item2": "[1.44.0, )"
-        },
-        {
-          "Item1": "Google.Apis",
-          "Item2": "[1.44.0, )"
-        }
-      ]
-    },
-    "Google.Apis.Calendar.v3": {
-      "Id": "Google.Apis.Calendar.v3",
-      "Version": "1.44.0.1872",
-      "Dependencies": [
-        {
-          "Item1": "Google.Apis",
-          "Item2": "[1.44.0, )"
-        },
-        {
-          "Item1": "Google.Apis.Auth",
-          "Item2": "[1.44.0, )"
-        }
-      ]
-    },
-    "Google.Apis.Core": {
-      "Id": "Google.Apis.Core",
-      "Version": "1.44.0",
-      "Dependencies": [
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[12.0.3, )"
-        }
-      ]
-    },
-    "Google.Apis.Docs.v1": {
-      "Id": "Google.Apis.Docs.v1",
-      "Version": "1.44.0.1877",
-      "Dependencies": [
-        {
-          "Item1": "Google.Apis",
-          "Item2": "[1.44.0, )"
-        },
-        {
-          "Item1": "Google.Apis.Auth",
-          "Item2": "[1.44.0, )"
-        }
-      ]
-    },
-    "Google.Apis.Drive.v3": {
-      "Id": "Google.Apis.Drive.v3",
-      "Version": "1.44.0.1863",
-      "Dependencies": [
-        {
-          "Item1": "Google.Apis",
-          "Item2": "[1.44.0, )"
-        },
-        {
-          "Item1": "Google.Apis.Auth",
-          "Item2": "[1.44.0, )"
-        }
-      ]
-    },
-    "Google.Apis.Gmail.v1": {
-      "Id": "Google.Apis.Gmail.v1",
-      "Version": "1.44.0.1859",
-      "Dependencies": [
-        {
-          "Item1": "Google.Apis",
-          "Item2": "[1.44.0, )"
-        },
-        {
-          "Item1": "Google.Apis.Auth",
-          "Item2": "[1.44.0, )"
-        }
-      ]
-    },
-    "Google.Apis.Script.v1": {
-      "Id": "Google.Apis.Script.v1",
-      "Version": "1.44.0.1882",
-      "Dependencies": [
-        {
-          "Item1": "Google.Apis",
-          "Item2": "[1.44.0, )"
-        },
-        {
-          "Item1": "Google.Apis.Auth",
-          "Item2": "[1.44.0, )"
-        }
-      ]
-    },
-    "Google.Apis.Sheets.v4": {
-      "Id": "Google.Apis.Sheets.v4",
-      "Version": "1.44.0.1877",
-      "Dependencies": [
-        {
-          "Item1": "Google.Apis",
-          "Item2": "[1.44.0, )"
-        },
-        {
-          "Item1": "Google.Apis.Auth",
-          "Item2": "[1.44.0, )"
-        }
-      ]
-    },
     "Humanizer.Core": {
       "Id": "Humanizer.Core",
       "Version": "2.4.2",
@@ -297,11 +151,6 @@
     "interop.domino.dll": {
       "Id": "interop.domino.dll",
       "Version": "1.0.0",
-      "Dependencies": []
-    },
-    "Microsoft.ApplicationInsights": {
-      "Id": "Microsoft.ApplicationInsights",
-      "Version": "2.3.0",
       "Dependencies": []
     },
     "Microsoft.AspNet.SignalR.Client": {
@@ -334,24 +183,9 @@
       "Version": "7.10.6071",
       "Dependencies": []
     },
-    "MimeKit": {
-      "Id": "MimeKit",
-      "Version": "2.5.1",
-      "Dependencies": [
-        {
-          "Item1": "BouncyCastle",
-          "Item2": "[1.8.5, )"
-        }
-      ]
-    },
     "Newtonsoft.Json": {
       "Id": "Newtonsoft.Json",
-      "Version": "12.0.3",
-      "Dependencies": []
-    },
-    "NodaTime": {
-      "Id": "NodaTime",
-      "Version": "2.4.7",
+      "Version": "11.0.2",
       "Dependencies": []
     },
     "NPOI": {
@@ -406,52 +240,6 @@
         {
           "Item1": "SharpZipLib",
           "Item2": "[1.0.0, )"
-        }
-      ]
-    },
-    "UiPath.GSuite.Activities": {
-      "Id": "UiPath.GSuite.Activities",
-      "Version": "1.5.1",
-      "Dependencies": [
-        {
-          "Item1": "Google.Apis.Calendar.v3",
-          "Item2": "[1.44.0.1872, )"
-        },
-        {
-          "Item1": "Google.Apis.Docs.v1",
-          "Item2": "[1.44.0.1877, )"
-        },
-        {
-          "Item1": "Google.Apis.Drive.v3",
-          "Item2": "[1.44.0.1863, )"
-        },
-        {
-          "Item1": "Google.Apis.Gmail.v1",
-          "Item2": "[1.44.0.1859, )"
-        },
-        {
-          "Item1": "Google.Apis.Script.v1",
-          "Item2": "[1.44.0.1882, )"
-        },
-        {
-          "Item1": "Google.Apis.Sheets.v4",
-          "Item2": "[1.44.0.1877, )"
-        },
-        {
-          "Item1": "Microsoft.ApplicationInsights",
-          "Item2": "[2.3.0, )"
-        },
-        {
-          "Item1": "MimeKit",
-          "Item2": "[2.5.1, )"
-        },
-        {
-          "Item1": "Newtonsoft.Json",
-          "Item2": "[12.0.3, )"
-        },
-        {
-          "Item1": "NodaTime",
-          "Item2": "[2.4.7, )"
         }
       ]
     },
